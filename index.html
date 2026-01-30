@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Garzetta</title>
+
+    <!-- CSS External -->
+    <link rel="stylesheet" href="css/style.css"
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <header class="main-header">
+        <!-- Logo -->
+        <div class="logo"></div>
+
+        <!-- Navigation Menu -->
+        <nav class="flex">
+            <a class="border rounded p-2" href="#home-page">Home</a>
+            <a class="border rounded p-2" href="#my-profile-page">My Profile</a>
+            <a class="border rounded p-2" href="#portfolio-page">Portfolio</a>
+            <a class="border rounded p-2" href="#message-me-page">Message Me</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <!-- Home Page -->
+        <section id="home-page" class="min-h-[500px] text-center content-center">
+            <h2 class="text-xl font-bold" id="Welcome-speech">Welcome to My Website</h2>
+            <p class="mt-2">I'm glad to have you here. Explore our service and offerings.</p>
+        </section>
+
+        <hr />
+
+        <!-- My Profile Page -->
+        <section id="my-profile-page" class="min-h-[500px] text-center content-center">
+            <h2 class="text-xl font-bold">About Me</h2>
+            <p class="mt-2">Garzetta is dedicated ...</p>
+        </section>
+
+        <hr />
+
+        <!-- Portfolio Page -->
+        <section id="portfolio-page" class="min-h-[500px] text-center content-center">
+            <h2 class="text-xl font-bold">My Portfolio</h2>
+            <p class="mt-2">Take a look at my diverse rang of project that showcase my skill...</p>
+        </section> 
+
+        <hr />
+
+        <!-- Message Me Page -->
+        <section id="message-me-page" class="min-h-[500px] mx-8">
+            <header>
+                <h2 class="text-xl font-bold">Message Me</h2>
+                <p class="mt-2">Have questions or want to work with me? Send me a message and i'll ...</p>
+            </header>
+
+            <form>
+                <div class="mb-4">
+                    <label class="block-mb-2" for="name">Name:</label>
+                    <input class="w-full p-2 border rounded" type="text" id="name" name="name" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block-mb-2" for="email">Email:</label>
+                    <input class="w-full p-2 border rounded" type="email" id="email" name="email" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block-mb-2" for="message">Message:</label>
+                    <textarea class="w-full p-2 border rounded" id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button class="px-4 py-2 bg-blue-500 text-white rounded" type="button">Send Message</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="text-cemter p-4">
+            &copy; 2026 Garzetta Portfolio. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Javascript External -->
+    <script src="js/script.js"></script>
+</body>
+</html>
