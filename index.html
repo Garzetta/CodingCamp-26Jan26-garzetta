@@ -3,83 +3,298 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Garzetta</title>
+    <title>Our Portfolio</title>
 
     <!-- CSS External -->
-    <link rel="stylesheet" href="css/style.css"
+    <link rel="stylesheet" href="css/style.css">
 
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="main-header">
         <!-- Logo -->
-        <div class="logo"></div>
+        <div class="logo">
+            <div class="logo-icon"></div>
+            <span class="logo-text">Our Company</span>
+        </div>
 
         <!-- Navigation Menu -->
-        <nav class="flex">
-            <a class="border rounded p-2" href="#home-page">Home</a>
-            <a class="border rounded p-2" href="#my-profile-page">My Profile</a>
-            <a class="border rounded p-2" href="#portfolio-page">Portfolio</a>
-            <a class="border rounded p-2" href="#message-me-page">Message Me</a>
+        <nav class="nav-menu">
+            <a class="nav-link" href="#home-page">Home</a>
+            <a class="nav-link" href="#our-profile-page">Our Profile</a>
+            <a class="nav-link" href="#portfolio-page">Portfolio</a>
+            <a class="nav-link" href="#message-us-page">Message us</a>
         </nav>
+        
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn" id="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </header>
-
-    <hr>
 
     <main>
         <!-- Home Page -->
-        <section id="home-page" class="min-h-[500px] text-center content-center">
-            <h2 class="text-xl font-bold" id="Welcome-speech">Welcome to My Website</h2>
-            <p class="mt-2">I'm glad to have you here. Explore our service and offerings.</p>
+        <section id="home-page" class="hero-section">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title" id="welcome-speech">Welcome to Our Website</h1>
+                    <p class="hero-subtitle">Professional technology solutions for modern businesses. Expert consulting and innovative digital transformation services.</p>
+                    <button class="cta-button">Start Collaboration</button>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=600&fit=crop&q=80" alt="Modern Building" class="hero-img">
+                    <div class="stats-overlay">
+                        <div class="stat-item">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Years</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">200+</div>
+                            <div class="stat-label">Experts</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">95%</div>
+                            <div class="stat-label">Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <hr />
+        <!-- Our Profile Page -->
+        <section id="our-profile-page" class="profile-section">
+            <div class="section-container">
+                <!-- About Company -->
+                <div class="about-section">
+                    <h2 class="section-title">About Us</h2>
+                    <div class="about-content">
+                        <div class="about-text">
+                            <p class="profile-text">We are an expert commercial technology solutions agency with extensive experience in helping businesses achieve professional results. Our team provides comprehensive consulting services from initial analysis to complete implementation.</p>
+                            <p class="profile-text">Since 2015, we've been a trusted partner for companies across industries, delivering innovative solutions that drive measurable business value. Our commitment to excellence and customer satisfaction has earned us recognition as a leading technology partner in Southeast Asia.</p>
+                        </div>
+                        <div class="about-image">
+                            <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=600&h=400&fit=crop&q=80" alt="Professional Team">
+                        </div>
+                    </div>
+                </div>
 
-        <!-- My Profile Page -->
-        <section id="my-profile-page" class="min-h-[500px] text-center content-center">
-            <h2 class="text-xl font-bold">About Me</h2>
-            <p class="mt-2">Garzetta is dedicated ...</p>
+                <!-- Stats Section -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">📊</div>
+                        <div class="stat-number-large">10+</div>
+                        <div class="stat-label-large">Years of Experience</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🚀</div>
+                        <div class="stat-number-large">500+</div>
+                        <div class="stat-label-large">Completed Projects</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">👥</div>
+                        <div class="stat-number-large">200+</div>
+                        <div class="stat-label-large">Expert Team Members</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">⭐</div>
+                        <div class="stat-number-large">95%</div>
+                        <div class="stat-label-large">Client Satisfaction</div>
+                    </div>
+                </div>
+                
+                <!-- Vision & Mission -->
+                <div class="vision-mission-section">
+                    <div class="vision-card">
+                        <h3 class="card-title">Our Vision</h3>
+                        <p class="card-text">To be Southeast Asia's most trusted technology partner, recognized for transforming businesses through innovative digital solutions that create lasting value and competitive advantage. We envision a future where every organization has access to enterprise-grade technology that empowers them to reach their full potential.</p>
+                    </div>
+                    <div class="mission-card">
+                        <h3 class="card-title">Our Mission</h3>
+                        <p class="card-text">We deliver exceptional technology solutions with unwavering integrity, continuous innovation, and customer-centricity at our core. Our mission is to provide flexible, scalable infrastructure and strategic insights that enable businesses to adapt to market changes, accelerate growth, and succeed in the digital marketplace.</p>
+                    </div>
+                </div>
+                
+                <!-- Headquarters -->
+                <div class="headquarters-section">
+                    <h3 class="subsection-title">Our Headquarters</h3>
+                    <div class="headquarters-grid">
+                        <div class="hq-card">
+                            <div class="hq-image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&h=300&fit=crop&q=80" alt="Jakarta Office" class="hq-image">
+                            </div>
+                            <div class="hq-info">
+                                <p class="hq-name">Jakarta Office</p>
+                                <p class="hq-address">SCBD, South Jakarta</p>
+                                <p class="hq-details">Main Headquarters</p>
+                            </div>
+                        </div>
+                        <div class="hq-card">
+                            <div class="hq-image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=400&h=300&fit=crop&q=80" alt="Bandung Office" class="hq-image">
+                            </div>
+                            <div class="hq-info">
+                                <p class="hq-name">Bandung Office</p>
+                                <p class="hq-address">Dago, Bandung</p>
+                                <p class="hq-details">Regional Branch</p>
+                            </div>
+                        </div>
+                        <div class="hq-card">
+                            <div class="hq-image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=400&h=300&fit=crop&q=80" alt="Surabaya Office" class="hq-image">
+                            </div>
+                            <div class="hq-info">
+                                <p class="hq-name">Surabaya Office</p>
+                                <p class="hq-address">CBD Surabaya</p>
+                                <p class="hq-details">Eastern Hub</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-
-        <hr />
 
         <!-- Portfolio Page -->
-        <section id="portfolio-page" class="min-h-[500px] text-center content-center">
-            <h2 class="text-xl font-bold">My Portfolio</h2>
-            <p class="mt-2">Take a look at my diverse rang of project that showcase my skill...</p>
-        </section> 
-
-        <hr />
-
-        <!-- Message Me Page -->
-        <section id="message-me-page" class="min-h-[500px] mx-8">
-            <header>
-                <h2 class="text-xl font-bold">Message Me</h2>
-                <p class="mt-2">Have questions or want to work with me? Send me a message and i'll ...</p>
-            </header>
-
-            <form>
-                <div class="mb-4">
-                    <label class="block-mb-2" for="name">Name:</label>
-                    <input class="w-full p-2 border rounded" type="text" id="name" name="name" required>
+        <section id="portfolio-page" class="portfolio-section">
+            <div class="section-container">
+                <h2 class="section-title">Project Portfolio</h2>
+                <p class="section-description">Explore our diverse range of successful projects across various industries. We specialize in delivering comprehensive solutions tailored to your business needs.</p>
+                
+                <div class="portfolio-grid">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&h=300&fit=crop&q=80" alt="Commercial Building">
+                        </div>
+                        <div class="portfolio-info">
+                            <div class="portfolio-category">Enterprise Solutions</div>
+                            <h3 class="portfolio-title">Commercial Analytics Platform</h3>
+                            <p class="portfolio-desc">Comprehensive real-time analytics dashboard providing actionable business insights through advanced data visualization for Indonesia's leading retail corporation.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=400&h=300&fit=crop&q=80" alt="Modern Architecture">
+                        </div>
+                        <div class="portfolio-info">
+                            <div class="portfolio-category">Financial Services</div>
+                            <h3 class="portfolio-title">Digital Banking Solution</h3>
+                            <p class="portfolio-desc">Secure mobile banking platform featuring biometric authentication, real-time transactions, and AI-powered financial advisory serving over 2 million users nationwide.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=400&h=300&fit=crop&q=80" alt="Business District">
+                        </div>
+                        <div class="portfolio-info">
+                            <div class="portfolio-category">E-Commerce</div>
+                            <h3 class="portfolio-title">Multi-Vendor Marketplace</h3>
+                            <p class="portfolio-desc">Scalable e-commerce platform with advanced inventory management, AI-driven recommendations, and integrated payment solutions processing 500K+ daily transactions.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&h=300&fit=crop&q=80" alt="Corporate Office">
+                        </div>
+                        <div class="portfolio-info">
+                            <div class="portfolio-category">CRM Systems</div>
+                            <h3 class="portfolio-title">AI-Powered CRM Platform</h3>
+                            <p class="portfolio-desc">Intelligent customer relationship management leveraging machine learning for predictive analytics, automated lead scoring, and personalized engagement strategies.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&h=300&fit=crop&q=80" alt="Technology Center">
+                        </div>
+                        <div class="portfolio-info">
+                            <div class="portfolio-category">Cloud Infrastructure</div>
+                            <h3 class="portfolio-title">Enterprise Cloud Architecture</h3>
+                            <p class="portfolio-desc">Robust hybrid cloud solution providing 99.99% uptime, auto-scaling capabilities, and enterprise-grade security for multinational corporation's global operations.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=400&h=300&fit=crop&q=80" alt="Collaboration Space">
+                        </div>
+                        <div class="portfolio-info">
+                            <div class="portfolio-category">Productivity Tools</div>
+                            <h3 class="portfolio-title">Digital Workplace Suite</h3>
+                            <p class="portfolio-desc">Integrated collaboration platform combining project management, communication tools, document sharing, and workflow automation for distributed teams of 10,000+ users.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="mb-4">
-                    <label class="block-mb-2" for="email">Email:</label>
-                    <input class="w-full p-2 border rounded" type="email" id="email" name="email" required>
+            </div>
+        </section>
+
+        <!-- Message Us Page -->
+        <section id="message-us-page" class="message-section">
+            <div class="message-container">
+                <div class="message-header">
+                    <h2 class="section-title">Contact Us</h2>
+                    <p class="section-description">Have questions about our services or want to discuss your project? Send us a message and our team will get back to you promptly.</p>
                 </div>
-                <div class="mb-4">
-                    <label class="block-mb-2" for="message">Message:</label>
-                    <textarea class="w-full p-2 border rounded" id="message" name="message" rows="5" required></textarea>
+                
+                <div class="message-grid">
+                    <div class="form-container">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label class="form-label" for="name">Full Name</label>
+                                <input class="form-input" type="text" id="name" name="name" placeholder="Enter your full name" required>
+                                <span class="error-message" id="name-error"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label" for="email">Email Address</label>
+                                <input class="form-input" type="email" id="email" name="email" placeholder="your.email@company.com" required>
+                                <span class="error-message" id="email-error"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label" for="phone">Phone Number</label>
+                                <input class="form-input" type="tel" id="phone" name="phone" placeholder="+62 812 3456 7890" required>
+                                <span class="error-message" id="phone-error"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label" for="message">Your Message</label>
+                                <textarea class="form-input form-textarea" id="message" name="message" rows="5" placeholder="Tell us about your project or inquiry..." required></textarea>
+                                <span class="error-message" id="message-error"></span>
+                            </div>
+                            
+                            <button class="submit-btn" type="submit">Send Message</button>
+                        </form>
+                    </div>
+                    
+                    <div class="result-container">
+                        <div class="result-box" id="result-box">
+                            <h3 class="result-title">Message Summary</h3>
+                            <p class="result-info">Your message details will appear here after submission.</p>
+                            <div id="result-content" class="result-content"></div>
+                        </div>
+                    </div>
                 </div>
-                <button class="px-4 py-2 bg-blue-500 text-white rounded" type="button">Send Message</button>
-            </form>
+            </div>
         </section>
     </main>
     
-    <footer>
-        <div class="text-cemter p-4">
-            &copy; 2026 Garzetta Portfolio. All rights reserved.
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>&copy; 2026 Garzetta Company. All rights reserved.</p>
+                <p class="footer-credit">RevoU Coding Camp Batch 26Jan26</p>
+            </div>
         </div>
     </footer>
 
